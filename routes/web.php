@@ -29,4 +29,5 @@ Route::middleware('auth')
     ->group(function () {
         Route::get('/', 'AdminController@dashboard')->name('dashboard');
         Route::get('users', 'UserController@index')->name('users.index');
+        Route::resource('posts', 'PostController');
     });

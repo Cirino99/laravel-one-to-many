@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('admin.layout.base')
 
 @section('content')
 <div class="container">
@@ -13,6 +13,8 @@
                             {{ session('status') }}
                         </div>
                     @endif
+
+                    @include('admin.includes.side-bar')
                     
                     <h1>Users</h1>
                     <table class="table table-striped">
