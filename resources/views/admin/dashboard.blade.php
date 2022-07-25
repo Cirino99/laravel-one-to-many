@@ -13,8 +13,12 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    {{ __('You are logged in!') }}
+                    <h2>Amminiostrazione sito:</h2>
+                    <ul>
+                        <li>
+                            Lista utenti regitrati: <a href="{{route('admin.users.index')}}" class="btn btn-primary">Utenti</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
